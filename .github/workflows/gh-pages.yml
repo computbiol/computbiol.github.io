@@ -1,0 +1,39 @@
+# workflow名字
+name: Deploy GitHub Pages
+
+# 触发条件：在push到master分支后
+on:
+  push:
+    branches:
+      - master
+
+# 任务
+jobs:
+  build-and-deploy:
+    # 服务器环境：最新版ubuntu
+    runs-on: ubuntu-latest
+    steps:
+      # 拉取代码
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+      
+      # 1. 安装Hugo
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.91.2'
+
+      # 2. 生成静态文件
+      - name: Build
+        run: hugo
+
+      # 3. 部署到 GitHub Pages
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@master # 作用：将项目构建和部署到github。 https://github.com/JamesIves/github-pages-deploy-action
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} # toKen私密变量
+          BASE_BRANCH: master # 要部署的文件夹所在的分支.
+          BRANCH: gh-pages # 部署到的分支
+          FOLDER: public # 要部署的文件夹.

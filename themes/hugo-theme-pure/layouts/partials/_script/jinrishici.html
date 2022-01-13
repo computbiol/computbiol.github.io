@@ -1,0 +1,12 @@
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+<script type="text/javascript">
+    jinrishici.load(function(result) {
+    // 自己的处理逻辑
+    function dyna(match) {
+    return match.substr(0, 1);
+    }
+    var subtitle = document.getElementsByClassName('site-subtitle');
+    subtitle[0].innerHTML = result.data.content + "<br>" + "——" + "〔" + result.data.origin.dynasty.replace(/(唐|宋|元|明|清)>代/, dyna) + "〕" + result.data.origin.author + "<br>" + "《" + result.data.origin.title + "》";
+    console.log(result)
+    });
+</script>

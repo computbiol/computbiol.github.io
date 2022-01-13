@@ -1,0 +1,16 @@
+<footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+  {{- partial "social.html" . }}
+  <div class="copyright">
+    {{-  $current := now.Format "2006" }}
+    &copy;
+    {{- if ne .Site.Params.since $current -}}
+        {{- print .Site.Params.since }}  -
+    {{- end }}
+    {{ $current }}
+    <div class="publishby">Powered by<a href="https://gohugo.io/" target="_blank"> Hugo</a></div>
+    <div class="publishby">
+        {{T "copyright_theme_by"}} <a href="https://github.com/xiaoheiAh" target="_blank"> xiaoheiAh </a>{{T "copyright_base_on"}}<a href="https://github.com/xiaoheiAh/hugo-theme-pure" target="_blank"> pure</a>.
+    </div>
+    <div class="publishby"><a href="http://www.beian.miit.gov.cn/" target="_blank">赣ICP备19010106号</a></div>
+  </div>
+</footer>
