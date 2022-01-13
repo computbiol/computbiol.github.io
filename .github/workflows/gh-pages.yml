@@ -31,9 +31,9 @@ jobs:
 
       # 3. 部署到 GitHub Pages
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@master # 作用：将项目构建和部署到github。 https://github.com/JamesIves/github-pages-deploy-action
+        uses: JamesIves/github-pages-deploy-action@v4.2.2
         with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} # toKen私密变量
-          BASE_BRANCH: master # 要部署的文件夹所在的分支.
-          BRANCH: gh-pages # 部署到的分支
-          FOLDER: public # 要部署的文件夹.
+          branch: gh-pages # The branch the action should deploy to.
+          token: ${{ secrets.ACCESS_TOKEN }} # PAT
+          branch: gh-pages # The branch to deploy.
+          folder: public # The folder in your repository that you want to deploy.
