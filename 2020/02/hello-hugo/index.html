@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        Hello Hugo - 西月秋千
+      </title>
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  
+  <meta name="theme-color" content="#000000" />
+  
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <meta name="description" content="hugo安装 方式一 mac使用brew安装，简单直接 brew install hugo hugo version 方式二 由于看中的一款主题要求hugo不低于某版本，brew默认安装的版本不满足，" />
+  <meta name="generator" content="Hugo 0.91.2 with theme pure" />
+  <title>Hello Hugo - 西月秋千</title>
+  
+  
+  <link rel="stylesheet" href="http://computbiol.com/css/style.min.c58e22f1aa6179cd5cb60b9e08421a2b9a9c9fe9352d095e051b51aae209e5c0.css">
+  
+  <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
+  <meta property="og:title" content="Hello Hugo" />
+<meta property="og:description" content="hugo安装 方式一 mac使用brew安装，简单直接 brew install hugo hugo version 方式二 由于看中的一款主题要求hugo不低于某版本，brew默认安装的版本不满足，" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://computbiol.com/2020/02/hello-hugo/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-02-23T12:20:20+08:00" />
+<meta property="article:modified_time" content="2020-02-23T12:20:20+08:00" />
+
+<meta itemprop="name" content="Hello Hugo">
+<meta itemprop="description" content="hugo安装 方式一 mac使用brew安装，简单直接 brew install hugo hugo version 方式二 由于看中的一款主题要求hugo不低于某版本，brew默认安装的版本不满足，"><meta itemprop="datePublished" content="2020-02-23T12:20:20+08:00" />
+<meta itemprop="dateModified" content="2020-02-23T12:20:20+08:00" />
+<meta itemprop="wordCount" content="339">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hello Hugo"/>
+<meta name="twitter:description" content="hugo安装 方式一 mac使用brew安装，简单直接 brew install hugo hugo version 方式二 由于看中的一款主题要求hugo不低于某版本，brew默认安装的版本不满足，"/>
+
+  <!--[if lte IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+    <![endif]-->
+
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159969702-1"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-159969702-1');
+  </script>
+ 
+</head>
+
+  </head>
+
+  
+  
+
+  <body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="http://computbiol.com/" target="_blank">
+            <img class="img-circle img-rotate" src="http://computbiol.com/avatar.png" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">moonswing</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md">student</h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>Shanghai, China</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="Type something..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="/">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">Home</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="/posts/">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">Archives</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-categories">
+                <a href="/categories/">
+                    <i class="icon icon-folder"></i>
+                  <span class="menu-title">Categories</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-tags">
+                <a href="/tags/">
+                    <i class="icon icon-tags"></i>
+                  <span class="menu-title">Tags</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-about">
+                <a href="/about/">
+                    <i class="icon icon-cup-fill"></i>
+                  <span class="menu-title">About</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+  <div class="widget-body">
+    <div id="jinrishici">
+      <div class="content">
+        <span class="site-subtitle">$ chmod +x mylife</span>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="widget">
+    <h3 class="widget-title">Board</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content"><p>enjoy~</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> Categories</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+        </ul>
+    </div>
+</div>
+      <div class="widget">
+    <h3 class="widget-title"> Tags</h3>
+    <div class="widget-body">
+        <ul class="tag-list">
+            
+        </ul>
+
+    </div>
+</div>
+      
+<div class="widget">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="http://computbiol.com/2020/02/markdown-ppt/" class="title">Marp-利用Markdown创建PPT</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-02-29 18:57:40 &#43;0800 &#43;0800" itemprop="datePublished">2020-02-29</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="http://computbiol.com/2020/02/hello-hugo/" class="title">Hello Hugo</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-02-23 12:20:20 &#43;0800 &#43;0800" itemprop="datePublished">2020-02-23</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">Catalogue</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/2020/02/hello-hugo/"
+    >Hello Hugo</a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="http://computbiol.com/2020/02/hello-hugo/" class="article-date">
+  <time datetime="2020-02-23 12:20:20 &#43;0800 &#43;0800" itemprop="datePublished">2020-02-23</time>
+</a>
+</span>
+
+
+	<span class="article-read hidden-xs">
+    	<i class="icon icon-eye-fill" aria-hidden="true"></i>
+    	<span id="http://computbiol.com/2020/02/hello-hugo/" class="leancloud_visitors"  data-flag-title="Hello Hugo">
+			<span class="leancloud-visitors-count">0</span>
+		</span>
+    </span>
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/02/hello-hugo/#comments"
+            class="article-comment-link">Comments</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 339words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 1minutes </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <h2 id="hugo安装">hugo安装</h2>
+<h3 id="方式一">方式一</h3>
+<p>mac使用brew安装，简单直接</p>
+<pre><code class="language-shell">brew install hugo
+hugo version
+</code></pre>
+<h3 id="方式二">方式二</h3>
+<p>由于看中的一款主题要求hugo不低于某版本，brew默认安装的版本不满足，想要安装其它版本。推荐<a href="https://github.com/gohugoio/hugo/releases">直接下载</a>可执行文件。</p>
+<blockquote>
+<p>参考：https://www.dazhuanlan.com/2019/10/24/5db109f5382e7/</p>
+</blockquote>
+<h2 id="主题下载">主题下载</h2>
+<p>这里很多<a href="https://themes.gohugo.io/">主题</a>，略扫一遍，看中hugo-theme-pure。很喜欢这款主题，简单纯粹。</p>
+<pre><code>cd themes/
+git clone https://github.com/xiaoheiAh/hugo-theme-pure
+</code></pre>
+<h2 id="生成文章">生成文章</h2>
+<p>新建博客项目</p>
+<pre><code>hugo new site blog
+</code></pre>
+<p>新建博文</p>
+<pre><code>hugo new posts/hello-hugo.md
+</code></pre>
+<p>预览网站</p>
+<pre><code>hugo server -D
+</code></pre>
+<p>预览无误后将要发布的文章内<code>draft</code>改为<code>false</code>后执行命令</p>
+<pre><code>hugo
+</code></pre>
+<p>根目录下多出的/public文件夹即为hugo生成的整个静态网站。</p>
+<p>参考：</p>
+<p><a href="https://github.com/xiaoheiAh/hugo-theme-pure">hugo-theme-pure</a></p>
+<p><a href="https://xiaohei.im/hugo-theme-pure/">赵小黑的博客</a></p>
+<p><a href="https://guangchuangyu.github.io/2015/12/%E5%96%9C%E6%96%B0%E5%8E%8C%E6%97%A7%E4%B9%8Bhello-hugo/">喜新厌旧之hello Hugo</a></p>
+<p><a href="https://www.flysnow.org/2018/07/29/from-hexo-to-hugo.html#hugomaupassant-1">从Hexo迁移到Hugo-送漂亮的Hugo Theme主题</a></p>
+
+    </div>
+    <div class="article-footer">
+<blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    <li class="post-copyright-link hidden-xs">
+      <strong>Permalink: </strong>
+      <a href="http://computbiol.com/2020/02/hello-hugo/" title="Hello Hugo" target="_blank" rel="external">http://computbiol.com/2020/02/hello-hugo/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>License：</strong><a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
+    </li>
+  </ul>
+</blockquote>
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="http://computbiol.com/" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="http://computbiol.com/avatar.png" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="http://computbiol.com/" target="_blank"><span class="text-dark">moonswing</span><small class="ml-1x">student</small></a></h3>
+        <div>Good Good Study, Day Day Up~</div>
+      </div>
+    </figure>
+  </div>
+</div>
+    </div>
+  </article>
+<section id="comments">
+    <div id="vcomments"></div>
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="next">
+                <a href="http://computbiol.com/2020/02/markdown-ppt/"
+                    title="Marp-利用Markdown创建PPT"><span>Newer&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="Catalogue" role="button">
+                    <span>[&nbsp;</span><span>Catalogue</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter"
+                data-mobile-sites="weibo,qq,qzone"></div>
+        </div>
+    </div>
+</nav>
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="http://computbiol.com/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2020  -
+    2022
+    <div class="publishby">Powered by<a href="https://gohugo.io/" target="_blank"> Hugo</a></div>
+    <div class="publishby">
+        Theme by <a href="https://github.com/xiaoheiAh" target="_blank"> xiaoheiAh </a>base on<a href="https://github.com/xiaoheiAh/hugo-theme-pure" target="_blank"> pure</a>.
+    </div>
+    <div class="publishby"><a href="http://www.beian.miit.gov.cn/" target="_blank">赣ICP备19010106号</a></div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="http://computbiol.com/js/application.min.a94ab19cb63a95c8d7fbd7b85cab3ddeea8c369bdf75b9cab6708787ead123af.js"></script>
+<script src="http://computbiol.com/js/plugin.min.19c5bcb2fb0789ab4f2b7834e5ceb5e92635645605bab902c1024b25f1502364.js"></script>
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            ROOT_URL: 'http:\/\/computbiol.com\/',
+            CONTENT_URL: 'http:\/\/computbiol.com\/\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="http://computbiol.com/js/insight.min.4a2d52de4bfff73e0c688404fe3d17c9a3ae12d9888e1e1ac9c690e4890de2ded50fe55f2b819c2ba55435a76f396f3ea6805765f0b0af5635cdf74ea459eab0.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+    });
+</script>
+
+<script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine"></script>
+<script type="text/javascript">
+    var GUEST = ['nick', 'mail', 'link'];
+    var meta = 'nick,mail';
+    meta = meta.split(',').filter(function (item) {
+        return GUEST.indexOf(item) > -1;
+    });
+    new Valine({
+        el: '#vcomments',
+        verify: true ,
+        notify: true ,
+        appId: 'roayHbNj52o9sYCoofypDQOa-gzGzoHsz',
+        appKey: 'Ffy7iFiY3OfUGqg7FI4m85zW',
+        placeholder: 'enjoy~',
+        avatar: 'mm',
+        meta: meta,
+        pageSize: '10' || 10,
+        visitor: true 
+});
+</script>
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+<script type="text/javascript">
+    jinrishici.load(function(result) {
+    
+    function dyna(match) {
+    return match.substr(0, 1);
+    }
+    var subtitle = document.getElementsByClassName('site-subtitle');
+    subtitle[0].innerHTML = result.data.content + "<br>" + "——" + "〔" + result.data.origin.dynasty.replace(/(唐|宋|元|明|清)>代/, dyna) + "〕" + result.data.origin.author + "<br>" + "《" + result.data.origin.title + "》";
+    console.log(result)
+    });
+</script>
+
+
+  </body>
+</html>
