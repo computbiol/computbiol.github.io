@@ -1,4 +1,4 @@
-baseURL: http://blog.computbiol.com/
+baseURL: https://blog.computbiol.com/
 theme: hugo-theme-pure
 title: 西月秋千
 defaultContentLanguage: en  # en/zh/...
@@ -99,7 +99,7 @@ params:
     author_title: student
     author_description: Good Good Study, Day Day Up~
     location: Shanghai, China
-    follow: http://blog.computbiol.com/
+    follow: https://blog.computbiol.com/
     # Social Links
     social:
       links:
