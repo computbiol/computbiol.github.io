@@ -2,28 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Series on 西月秋千</title>
-    <link>http://computbiol.com/series/</link>
+    <link>http://blog.computbiol.com/series/</link>
     <description>Recent content in Series on 西月秋千</description>
     <generator>Hugo -- gohugo.io</generator>
     
-        <atom:link href="http://computbiol.com/series/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://blog.computbiol.com/series/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Marp-利用Markdown创建PPT</title>
-      <link>http://computbiol.com/2020/02/markdown-ppt/</link>
+      <link>http://blog.computbiol.com/2020/02/markdown-ppt/</link>
       <pubDate>Sat, 29 Feb 2020 18:57:40 +0800</pubDate>
       
-      <guid>http://computbiol.com/2020/02/markdown-ppt/</guid>
+      <guid>http://blog.computbiol.com/2020/02/markdown-ppt/</guid>
       <description>点击此处查看PPT效果 Marp Markdown Presentation Ecosystem https://marp.app/ How to write slides Split pages by horizontal ruler (---). It&amp;rsquo;s very simple! 😆 # Slide 1 foobar --- # Slide 2 foobar Marp for VS Code https://github.com/marp-team/marp-vscode https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode Marp CLI https://github.com/marp-team/marp-cli Install npm install -g @marp-team/marp-cli Basic usage Convert to HTML marp slide-deck.mdormarp slide-deck.md -o output.html Convert to PDF (&amp;ndash;pdf) marp --pdf slide-deck.md</description>
     </item>
     
     <item>
       <title>Hello Hugo</title>
-      <link>http://computbiol.com/2020/02/hello-hugo/</link>
+      <link>http://blog.computbiol.com/2020/02/hello-hugo/</link>
       <pubDate>Sun, 23 Feb 2020 12:20:20 +0800</pubDate>
       
-      <guid>http://computbiol.com/2020/02/hello-hugo/</guid>
+      <guid>http://blog.computbiol.com/2020/02/hello-hugo/</guid>
       <description>hugo安装 方式一 mac使用brew安装，简单直接 brew install hugo hugo version 方式二 由于看中的一款主题要求hugo不低于某版本，brew默认安装的版本不满足，</description>
     </item>
     
