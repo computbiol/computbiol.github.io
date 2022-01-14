@@ -29,10 +29,21 @@ jobs:
       - name: Build
         run: hugo
 
-      # 3. 部署到 GitHub Pages
+      # 3. Add CNAME
+      - name: Add CNAME
+        run: |
+          echo "blog.computbiol.com" > public/CNAME
+          mkdir -p public/other && cp other/marp.html public/other
+
+      # 4. 部署到 GitHub Pages
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.2.2
         with:
           token: ${{ secrets.ACCESS_TOKEN }} # PAT
           branch: gh-pages # The branch the action should deploy to.
           folder: public # The folder in your repository that you want to deploy.
+
+      # 5. 销毁痕迹
+      - name: Remove public directory
+        run: rm -rf public 
+
