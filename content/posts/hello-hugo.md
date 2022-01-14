@@ -23,40 +23,45 @@ hugo version
 
 
 
-## 主题下载
+## 主题下载和配置
 
 这里很多[主题](https://themes.gohugo.io/)，略扫一遍，看中hugo-theme-pure。很喜欢这款主题，简单纯粹。
 
-```
+```shell
 cd themes/
 git clone https://github.com/xiaoheiAh/hugo-theme-pure
 ```
 
+编辑`config.yml`，添加
+
+```yaml
+theme: hugo-theme-pure
+```
 
 
 ## 生成文章
 
 新建博客项目
 
-```
+```shell
 hugo new site blog
 ```
 
 新建博文
 
-```
+```shell
 hugo new posts/hello-hugo.md
 ```
 
 预览网站
 
-```
+```shell
 hugo server -D
 ```
 
 预览无误后将要发布的文章内`draft`改为`false`后执行命令
 
-```
+```shell
 hugo
 ```
 
