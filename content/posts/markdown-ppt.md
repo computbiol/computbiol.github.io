@@ -4,7 +4,7 @@ date: 2020-02-29T18:57:40+08:00
 draft: false
 ---
 
-[点击此处查看PPT效果](https://blog.computbiol.com/public/marp.html)
+[点击此处查看PPT效果](https://blog.computbiol.com/other/marp.html)
 
 # Marp
 
