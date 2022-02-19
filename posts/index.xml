@@ -5,10 +5,19 @@
     <link>https://blog.computbiol.com/posts/</link>
     <description>Recent content in Posts on 西月秋千</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 29 Feb 2020 18:57:40 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 24 Mar 2021 10:35:24 +0800</lastBuildDate>
     
         <atom:link href="https://blog.computbiol.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>基于Python HTTP原生库部署深度学习模型API</title>
+      <link>https://blog.computbiol.com/2021/03/deploy-dl-api/</link>
+      <pubDate>Wed, 24 Mar 2021 10:35:24 +0800</pubDate>
+      
+      <guid>https://blog.computbiol.com/2021/03/deploy-dl-api/</guid>
+      <description>这篇笔记是2021年3月份部署深度学习模型时记录的，因具有公网ip的云服务器配置极其有限，所以使用frp进行内网穿透，主要流程如下： Python HTT</description>
+    </item>
     
     <item>
       <title>Marp-利用Markdown创建PPT</title>
