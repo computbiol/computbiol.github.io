@@ -42,7 +42,7 @@
 <meta itemprop="name" content="基于Python HTTP原生库部署深度学习模型API">
 <meta itemprop="description" content="这篇笔记是2021年3月份部署深度学习模型时记录的，因具有公网ip的云服务器配置极其有限，所以使用frp进行内网穿透，主要流程如下： Python HTT"><meta itemprop="datePublished" content="2021-03-24T10:35:24+08:00" />
 <meta itemprop="dateModified" content="2021-03-24T10:35:24+08:00" />
-<meta itemprop="wordCount" content="386">
+<meta itemprop="wordCount" content="371">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="基于Python HTTP原生库部署深度学习模型API"/>
 <meta name="twitter:description" content="这篇笔记是2021年3月份部署深度学习模型时记录的，因具有公网ip的云服务器配置极其有限，所以使用frp进行内网穿透，主要流程如下： Python HTT"/>
@@ -272,7 +272,7 @@
     </span>
         <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2021/03/deploy-dl-api/#comments"
             class="article-comment-link">Comments</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 386words</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 371words</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 1minutes </span>
       </div>
     </div>
@@ -281,10 +281,8 @@
 <blockquote>
 <p>Python HTTP原生库部署服务 + systemd单元自启 + frp内网穿透 + nginx反向代理</p>
 </blockquote>
-<p>以下所有步骤，1-3位于内网服务器，4位于外网服务器。</p>
 <h2 id="1-使用原生python-http库部署服务">1. 使用原生Python HTTP库部署服务</h2>
-<p>这里最后产生<code>dl_server_api.py</code>文件。</p>
-<h3 id="参考教程">参考教程：</h3>
+<p>假设以<code>dl_server_api.py</code>文件为例，具体可参考：</p>
 <p><a href="https://github.com/dmis-lab/bern">A neural named entity recognition and multi-type normalization tool for biomedical text mining</a></p>
 <p><a href="https://blog.ailemon.net/2020/11/09/dl-best-deployment-python-impl-http-api-server/">深度学习模型最佳部署方式：用Python实现HTTP服务器作API接口</a></p>
 <h2 id="2-创建systemd单元文件并设置开机自动启动">2. 创建systemd单元文件并设置开机自动启动</h2>
@@ -324,7 +322,7 @@ remote_port = 20000
 <pre><code>sudo systemctl restrat frpc
 </code></pre>
 <h2 id="4-nginx添加反向代理">4. nginx添加反向代理</h2>
-<p>编辑nginx配置文件</p>
+<p>编辑frp服务端所在服务器的nginx配置文件</p>
 <pre><code>location /dl_api/ {
      proxy_pass http://127.0.0.1:20000/; 
      proxy_set_header Host $proxy_host;
