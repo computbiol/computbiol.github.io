@@ -8,16 +8,11 @@ draft: false
 
 > Python HTTP原生库部署服务 + systemd单元自启 + frp内网穿透 + nginx反向代理
 
-以下所有步骤，1-3位于内网服务器，4位于外网服务器。
-
 
 
 ## 1. 使用原生Python HTTP库部署服务
 
-这里最后产生`dl_server_api.py`文件。
-
-
-### 参考教程：
+假设以`dl_server_api.py`文件为例，具体可参考：
 
 [A neural named entity recognition and multi-type normalization tool for biomedical text mining](https://github.com/dmis-lab/bern)
 
@@ -83,7 +78,7 @@ sudo systemctl restrat frpc
 
 ## 4. nginx添加反向代理
 
-编辑nginx配置文件
+编辑frp服务端所在服务器的nginx配置文件
 
 ```
 location /dl_api/ {
@@ -99,5 +94,4 @@ location /dl_api/ {
 ```
 sudo nginx -s reload
 ```
-
 
